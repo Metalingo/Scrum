@@ -1,0 +1,20 @@
+name: create daily scrum
+on: 
+  schedule:
+  - cron: "* * * * 1,2,3,4,5"
+
+jobs:
+  create_scrum:
+    name: scrum 
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Today's date
+      run: echo "TODAY=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
+
+    - name: create new scrum issue
+      uses: act/issue-bot@v3
+      with:
+        labels: "scrum"
+        title: ${{ env.TODAY }} Metalingo Scrum
+        close-previous: true
