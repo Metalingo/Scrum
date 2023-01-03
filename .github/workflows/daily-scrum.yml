@@ -20,6 +20,8 @@ jobs:
     - name: create new scrum issue
       uses: imjohnbo/issue-bot@v3
       with:
-        labels: "scrum"
+        assignees: ${{ steps.extract.outputs.assignees }}
+        labels: ${{ steps.extract.outputs.labels }}
         title: ${{ env.TODAY }} Metalingo Scrum
+        body: ${{ steps.extract.outputs.body }}
         close-previous: true
