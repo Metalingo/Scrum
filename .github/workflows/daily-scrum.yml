@@ -1,13 +1,18 @@
 name: Create Daily Scrum Issue
 on: 
   schedule:
-  - cron: "0 * * * *"
+  - cron: "* * * * *"
 
 jobs:
   create_scrum:
     name: scrum 
     runs-on: ubuntu-latest
     steps:
+    
+    - uses: imjohnbo/extract-issue-template-fields@v1
+      id: extract
+      with:
+        path: .github/ISSUE_TEMPLATE/scrum.md
 
     - name: Today's date
       run: echo "TODAY=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
