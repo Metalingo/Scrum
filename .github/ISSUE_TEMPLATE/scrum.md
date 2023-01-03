@@ -7,8 +7,15 @@ assignees: cwkeam, winterrykim, scottsuk0306, esinx, yxxshin, SangminAhn21
 
 ---
 
-1. What did I accomplish yesterday?
+# Daily Scrum
 
-2. What I am working on today?
+Please answer the follwing three questions as a comment. One sentence is enough.
 
-3. Are there any blockers?
+### 1. What are you working on today?
+- 
+
+### 2. What did you complete yesterday?
+- 
+
+### 3. Need any help? Any blockers?
+- 
