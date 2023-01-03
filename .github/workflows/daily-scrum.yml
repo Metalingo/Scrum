@@ -18,7 +18,7 @@ jobs:
       run: echo "TODAY=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
 
     - name: create new scrum issue
-      uses: act/issue-bot@v3
+      uses: imjohnbo/issue-bot@v3
       with:
         labels: "scrum"
         title: ${{ env.TODAY }} Metalingo Scrum
