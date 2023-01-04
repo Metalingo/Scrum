@@ -1,7 +1,7 @@
 name: Create Daily Scrum Issue
 on: 
   schedule:
-  - cron: "0 1 * * 1,2,3,4,5"
+  - cron: "45 0 * * 1,2,3,4,5"
 
 jobs:
   create_scrum:
