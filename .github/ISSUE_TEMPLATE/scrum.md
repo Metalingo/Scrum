@@ -3,7 +3,7 @@ name: scrum
 about: Daily scrum template
 title: ''
 labels: scrum
-assignees: cwkeam, winterrykim, scottsuk0306, esinx, yxxshin, SangminAhn21, LoggingCo
+assignees: cwkeam, winterrykim, scottsuk0306, esinx, yxxshin, SangminAhn21, LoggingCo, iriskimm
 
 ---
 
